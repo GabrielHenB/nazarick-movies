@@ -1,0 +1,27 @@
+{
+	"name" : "gabriel/nazarick-movies",
+	"description" : "Pratica PHP com Componentes",
+	"minimum-stability" : "stable",
+	"authors" : [{
+			"name" : "gabriel",
+			"email" : "ghbraz17@gmail.com",
+			"homepage" : "https://github.com/GabrielHenB",
+			"role" : "Student"
+		}
+	],
+	"config" : {
+		"vendor-dir" : "vendor"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Source\\" : "source/"
+		},
+		"files" : [
+			"source/Support/Config.php",
+			"source/Support/Helpers.php"
+		]
+	},
+	"require" : {
+		"league/plates" : "v4.0.0-alpha"
+	}
+}
