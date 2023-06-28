@@ -25,26 +25,24 @@ class User extends Model
     //Os requeridos refletem a regra de negocio do bd
     
     /** @var array $required table fields*/
-    protected static $required = ["first_name","last_name","email","password"];
+    protected static $required = ["username","email","password"];
     
     /**
-     * @param string $firstName
-     * @param string $lastName
+     * @param string $username
      * @param string $email
-     * @param string $cpf
      * @return \Source\Models\User
      */
-    public function bootstrap(string $firstName, string $lastName, string $email, string $password, string $cpf = null)
+    public function bootstrap(string $username, string $email, string $password)
     {
         //Funcoes para inicio do usuario
         //permite que metodos com mesma assinatura sejam chamados pelo Model se existirem
         //logo as propriedades sao tratadas pelo protected data()
         //e todo trabalho e realizado no data tambem
-        $this->first_name = $firstName; 
-        $this->last_name = $lastName;
+        $this->username = $username; 
+        
         $this->email = $email;
         $this->password = $password;
-        $this->cpf = $cpf;
+        
         return $this; //garante que o registro continue ativo
     }
     
@@ -125,7 +123,7 @@ class User extends Model
         if(!$this->required()){
             //Embora o controle dos outros seja passado para outra camada
             //aqui precisamos saber o que aconteceu em cada processamento
-            $this->message->warning("NOME, SOBRENOME e EMAIL são campos obrigatórios!");
+            $this->message->warning("Existem campos obrigatórios não preenchidos!");
             return null;
         }
         //Aqui valida se o formato estiver certo atraves da funcao em Helpers.php
@@ -208,24 +206,6 @@ class User extends Model
         return $this;
         
     }
-    
-    /* Nao mais necessaria pois agora eh parte da superclasse Model 
-    private function required(): bool
-    {
-        //Quais campos sao requeridos
-        if(empty($this->first_name)||empty($this->last_name)||empty($this->email)){
-            $this->message = "Sao necessarios o nome, sobrenome e email para cadastrar!!";
-            return false;
-        }
-        
-        if(!filter_var($this->email, FILTER_VALIDATE_EMAIL)){
-            $this->message = "Email informado e invalido!";
-            return false;
-        }
-        
-        return true;
-    }
-    */
     
 }
 
