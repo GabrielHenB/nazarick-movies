@@ -12,4 +12,4 @@ Aside from that it uses the following libraries & components:
 - PHP League Plates component (https://packagist.org/packages/league/plates)
   
 Initially developed for a project from course on PUC Minas (the HTML and JS part), and then I decided to use it to practice PHP.
-Which means PHP parts are still in development (and so am I, since I'm using this for practice!)
+Which means PHP parts are still in development (and not optimal, since I'm using this for practice!)
