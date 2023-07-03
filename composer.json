@@ -18,7 +18,7 @@
 		},
 		"files" : [
 			"source/Support/Config.php",
-			"source/Support/Helpers.php"
+			"source/Support/Utilitarios.php"
 		]
 	},
 	"require" : {
