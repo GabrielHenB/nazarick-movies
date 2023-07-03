@@ -1,7 +1,7 @@
 
 const BASE_IMAGENS = 'https://image.tmdb.org/t/p/w500';
 const ENDPOINT_BASE = 'https://api.themoviedb.org/3';
-const API_KEY = 'fe789a1699cd8320b66a384db6df8e60'; 
+const API_KEY = '#'; //Placeholder, isso n vai funcionar
 
 
 function VerificaTamanho(textao){
