@@ -8,8 +8,8 @@
  */
  define("CONF_DB_HOST","localhost");
  define("CONF_DB_USER","root");
- define("CONF_DB_PASS","mysqlpassword");
- define("CONF_DB_NAME","nazamovieudb");
+ define("CONF_DB_PASS","mysqlpassword"); //placeholder
+ define("CONF_DB_NAME","nazamovieudb"); //placeholder
  
  
  /***
