@@ -1,7 +1,15 @@
-# nazarick-movies
-A movie portal created using PHP and Javascript! 
+# Nazarick Movies
+A movie portal project in development, using PHP and Javascript!
 
-It fetches stuff from themoviedb's API.
+- It uses AJAX to fetch stuff from themoviedb's API.
+- Presents movies' information on the landing page.
+- Has a search function that sends the query by Ajax requisition.
+- Is more or less responsive for mobile through CSS media queries.
 
-Initially developed for a project from PUC Minas.
-Then later on I used it to practice PHP.
+Aside from that it uses the following libraries & components:
+- Bootstrap (https://getbootstrap.com/)
+- jQuery (https://jquery.com/)
+- PHP League Plates component (https://packagist.org/packages/league/plates)
+  
+Initially developed for a project from course on PUC Minas (the HTML and JS part), and then I decided to use it to practice PHP.
+Which means PHP parts are still in development (and not optimal, since I'm using this for practice!)
