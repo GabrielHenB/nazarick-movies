@@ -5,6 +5,8 @@ A movie portal project in development, using PHP and Javascript!
 - Presents movies' information on the landing page.
 - Has a search function that sends the query by Ajax requisition.
 - Is more or less responsive for mobile through CSS media queries.
+- Since the front-end was already completed back in 2020, the PHP back-end is mostly incomplete for now.
+- I plan to code a simple PHP backend for it without using frameworks for this project specifically.
 
 Aside from that it uses the following libraries & components:
 - Bootstrap (https://getbootstrap.com/)
