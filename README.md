@@ -1,5 +1,6 @@
 # Nazarick Movies
 A movie portal project in development, using PHP and Javascript!
+To see the working front-end with themoviedb's API <a href='https://sitediwt2.undefmoonface.repl.co/'>click here(Repl.it)</a>!
 
 - It uses AJAX to fetch stuff from themoviedb's API.
 - Presents movies' information on the landing page.
